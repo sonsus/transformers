@@ -243,7 +243,7 @@ class PipelineTestCaseMeta(type):
 
                         tiny_model_repo_id = f"hf-internal-testing/{model_arch_name}"
                         try:
-                            _ = HfApi.model_info(tiny_model_repo_id)
+                            _ = HfApi().model_info(tiny_model_repo_id)
                         except huggingface_hub.utils.RepositoryNotFoundError:
                             continue
 
