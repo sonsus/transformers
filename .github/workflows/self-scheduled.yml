@@ -9,7 +9,7 @@ name: Self-hosted runner (scheduled)
 on:
   push:
     branches:
-      - extract_warnings_in_CI
+      - run_extract_warnings_in_CI
 
 env:
   HF_HOME: /mnt/cache
